@@ -1,0 +1,46 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/live/live",
+    "pages/focus/focus",
+    "pages/usercenter/usercenter",
+    "pages/lobby/lobby",
+    "pages/room/room"
+  ],
+  "tabBar": {
+    "selectedColor": "#f80",
+    "borderStyle": "white",
+    "list": [{
+      "iconPath": "/images/dash.gif",
+      "selectedIconPath": "/images/dash.gif",
+      "pagePath": "pages/index/index",
+      "text": "首页"
+    },
+    {
+      "iconPath": "/images/live.gif",
+      "selectedIconPath": "/images/live.gif",
+      "pagePath": "pages/live/live",
+      "text": "直播"
+    },
+    {
+      "iconPath": "/images/focus.gif",
+      "selectedIconPath": "/images/focus.gif",
+      "pagePath": "pages/focus/focus",
+      "text": "关注"
+    },
+    {
+      "iconPath": "/images/user.png",
+      "selectedIconPath": "/images/user.png",
+      "pagePath": "pages/usercenter/usercenter",
+      "text": "我的"
+    }]
+  },
+  "window":{
+    "backgroundTextStyle":"#333",
+    "navigationBarBackgroundColor": "rgba(39,39,39,.8)",
+    "navigationBarTitleText": "龙珠直播",
+    "navigationBarTextStyle":"#fff",
+    "backgroundColor": "#eee",
+    "enablePullDownRefresh": false
+  }
+}

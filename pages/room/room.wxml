@@ -1,0 +1,23 @@
+<view class="room-warp">
+    <view class="video">
+        <video src="/images/10752902-1-hd.mp4" action="play" ></video>
+    </view>
+    <view class="msg-pane">
+        <view class="top-title">
+            <view class="title-nav active">聊天</view>
+        </view>
+        <scroll-view scroll-y="true" class="msg-content">
+            <scroll-view scroll-y="true" class="msg-content-scroll">
+                <view wx:for="{{tmp}}" class="msg {{item.isLog?'log':''}}">{{item.text}}</view>
+            </scroll-view>
+        </scroll-view>
+    </view>
+    <view class="chart-pane">
+        <view class="text">
+            <input value="{{inputmsg}}" bindinput="inputMsg" placeholder="输入弹幕,发射吧~" />
+        </view>
+        <view class="btn">
+            <button bindtap="shot">发射</button>
+        </view>
+    </view>
+</view>

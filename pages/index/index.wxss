@@ -1,0 +1,42 @@
+/**index.wxss**/
+.main {
+  width: 100%;
+  height: 100%;
+}
+
+
+.slide-image {
+  width: 100%;
+  height: 100%;
+}
+
+.top-category {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  width: auto;
+  height: 170rpx;
+  margin-bottom: 10px;
+}
+
+.category-item {
+  height: 140rpx;
+  padding: 10px;
+  width: 110rpx;
+  flex-shrink: 0;
+}
+.category-image {
+  width: 100%;
+  height: 110rpx;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+}
+.category-text {
+  font-size: 10rpx;
+  width: 100%;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  color: #333;
+}

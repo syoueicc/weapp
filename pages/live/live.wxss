@@ -1,0 +1,19 @@
+.nav-pane {
+    width: 600px;
+    height: 40px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    border-bottom: 1px solid #666;
+}
+
+.nav-item {
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    align-self: center;
+    padding: 0 8px;
+    font-size: 12px;
+    color: #666;
+}

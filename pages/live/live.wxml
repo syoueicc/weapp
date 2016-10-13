@@ -1,0 +1,11 @@
+<import src="../templates/list.wxml"/>
+
+<view class="container">
+    <scroll-view scroll-x="true">
+        <view class="nav-pane">
+            <view class="nav-item" wx:for="{{nav}}">{{item}}</view>
+        </view>
+    </scroll-view>
+    
+    <template is="room-list" data="{{title: nav[0], list: list}}" />
+</view>

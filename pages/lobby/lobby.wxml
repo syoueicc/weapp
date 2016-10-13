@@ -1,0 +1,5 @@
+<import src="../templates/list.wxml"/>
+
+<view class="container">
+	<template is="room-list" data="{{list: lobby}}" />
+</view>

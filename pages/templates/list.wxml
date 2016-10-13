@@ -1,0 +1,15 @@
+<template name="room-list">
+  <view class="hot-rooms">
+    <view class="title" wx:if="{{!!title}}">
+      {{title}}
+    </view>
+    <view class="hot-items">
+      <view class="hot-item" wx:for="{{list}}">
+        <navigator url="../room/room?roomid={{item.id}}"  class="hot-item-img">
+          <image src="{{item.img}}"  ></image>
+        </navigator>
+        <view class="hot-item-text">{{item.text}}</view>
+      </view>
+    </view>
+  </view>
+</template>

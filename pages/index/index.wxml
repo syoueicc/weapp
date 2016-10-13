@@ -1,0 +1,22 @@
+<import src="../templates/list.wxml"/>
+
+<view class="container">
+  <swiper width="100%" style="height: 200px;" indicator-dots="true" autoplay="true" interval="2000" duration="500">
+    <swiper-item wx:for="{{adList}}">
+      <image src="{{item.url}}" class="slide-image" />
+    </swiper-item>
+  </swiper>
+  <scroll-view scroll-x="true" width="100%" style="border-bottom: 1px solid #ddd;">
+    <view class="top-category" style="width:{{categoryList.length * 110 + 'rpx'}}">
+      <view class="category-item" wx:for="{{categoryList}}">
+        
+        <navigator url="../lobby/lobby?category={{item.id}}">
+          <image src="{{item.img}}" class="category-image"></image>
+        </navigator>
+        <view class="category-text">{{item.text}}</view>
+      </view>
+    </view>
+  </scroll-view>
+
+  <template is="room-list" data="{{title: '热门房间', list: roomList}}" />
+</view>
